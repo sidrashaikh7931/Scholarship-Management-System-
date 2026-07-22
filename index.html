@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student Scholarship Management System - Login to manage and apply for scholarships">
+  <title>Login | ScholarHub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="auth-wrapper">
+    <!-- Brand Panel -->
+    <div class="auth-brand-panel">
+      <div class="auth-brand-title">🎓 ScholarHub</div>
+      <p class="auth-brand-subtitle">
+        Your gateway to educational opportunities. Discover, apply, and track scholarships — all in one place.
+      </p>
+      <div class="mt-4" style="z-index:1;">
+        <div class="d-flex align-items-center gap-3 mb-3" style="opacity:0.8;">
+          <i class="bi bi-check-circle-fill"></i>
+          <span>Browse hundreds of scholarships</span>
+        </div>
+        <div class="d-flex align-items-center gap-3 mb-3" style="opacity:0.8;">
+          <i class="bi bi-check-circle-fill"></i>
+          <span>Easy application process</span>
+        </div>
+        <div class="d-flex align-items-center gap-3" style="opacity:0.8;">
+          <i class="bi bi-check-circle-fill"></i>
+          <span>Real-time status tracking</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Form Panel -->
+    <div class="auth-form-panel">
+      <div class="auth-form-card fade-in">
+        <h2>Welcome back</h2>
+        <p class="subtitle">Sign in to your account to continue</p>
+
+        <form id="loginForm">
+          <div class="mb-3">
+            <label class="form-label-custom" for="loginEmail">Email Address</label>
+            <div class="input-group-icon">
+              <i class="bi bi-envelope input-icon"></i>
+              <input type="email" class="form-control form-control-custom" id="loginEmail"
+                     placeholder="you@example.com" required>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label-custom" for="loginPassword">Password</label>
+            <div class="input-group-icon">
+              <i class="bi bi-lock input-icon"></i>
+              <input type="password" class="form-control form-control-custom" id="loginPassword"
+                     placeholder="Enter your password" required minlength="6">
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="rememberMe">
+              <label class="form-check-label" for="rememberMe" style="font-size:0.85rem;color:var(--text-secondary);">
+                Remember me
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary-custom w-100 py-2 mb-3" id="loginBtn">
+            <span class="btn-text">Sign In</span>
+            <span class="spinner-border spinner-border-sm d-none" id="loginSpinner" role="status"></span>
+          </button>
+        </form>
+
+        <p class="text-center mt-3" style="font-size:0.9rem;color:var(--text-secondary);">
+          Don't have an account?
+          <a href="/register" style="font-weight:600;">Create one</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/utils.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>
